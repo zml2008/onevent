@@ -4,8 +4,9 @@ package com.zachsthings.onevent;
  * Represents a callable event.
  */
 public abstract class Event {
+
 	/**
-	 * Stores cancelled status. will be false unless a subclass publishes
+	 * Stores cancelled status. Will be false unless a subclass publishes
 	 * setCancelled.
 	 */
 	protected boolean cancelled = false;
@@ -51,7 +52,7 @@ public abstract class Event {
 	 * Returning true will prevent calling any even Order slots.
 	 *
 	 * @see Order
-	 * @return false if the event is propogating; events which do not implement
+	 * @return false if the event is propagating; events which do not implement
 	 *         Cancellable should never return true here
 	 */
 	public boolean isCancelled() {
