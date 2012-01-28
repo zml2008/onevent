@@ -23,7 +23,6 @@ public class SimpleEventManagerTest {
 
 	@Test
 	public void testEventCalling() {
-		final EventManager eventManager = new SimpleEventManager(logger);
 		final TestListener testListener = new TestListener();
 		eventManager.registerEvents(testListener, this);
 		eventManager.callEvent(new TestEvent());
@@ -32,7 +31,6 @@ public class SimpleEventManagerTest {
 	
 	@Test
 	public void testEventPriorities() {
-		final EventManager eventManager = new SimpleEventManager(logger);
 		final List<Order> calledOrders = new ArrayList<Order>();
 		for (final Order order : Order.values()) {
 			eventManager.registerEvent(TestEvent.class, order, new EventExecutor() {
