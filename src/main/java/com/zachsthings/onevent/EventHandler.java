@@ -12,5 +12,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface EventHandler {
 
-	Order order() default Order.DEFAULT;
+    Order order() default Order.DEFAULT;
 }
