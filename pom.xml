@@ -5,6 +5,12 @@
   <version>1.0</version>
   <name>onEvent</name>
   <description>onEvent is a fast annotation-based event system written in Java</description>
+  <licenses>
+    <license>
+      <name>Apache 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+    </license>
+  </licenses>
 
   <scm>
     <connection>scm:git:git://github.com/zml2008/onevent.git</connection>
